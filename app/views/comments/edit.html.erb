@@ -1,0 +1,11 @@
+<h1>Comments</h1>
+<div>
+<div><%=@comment.blog.title%></div>
+
+</div>
+
+
+<%= form_for [@blog, @comment] do |f| %>
+<%= f.text_area :content %>
+<%= f.submit %>
+<% end %>

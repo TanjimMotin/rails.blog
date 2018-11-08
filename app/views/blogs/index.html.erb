@@ -1,0 +1,9 @@
+<h1 class="maintitle">Welcome to my blog!!!!</h1>
+<div class="mainform">
+<% @blogs.each do |b| %>
+<div class="sept">
+<div class="content"><a href="/blogs/<%= b.id %>">Title : <%= b.title %></a></div>
+<div class="content">Content: <%= b.content %> </div>
+</div>
+<% end %>
+</div>

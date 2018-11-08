@@ -1,0 +1,10 @@
+<h1>List of Comments</h1>
+
+<% @comments.each do |c|%>
+<div>Title: <%= c.blog.title %> </div>
+
+<div>Content: <%= c.blog.content %> </div>
+<hr>
+<div>Comment: <%= c.content %> </div>
+<hr>
+<% end %>
